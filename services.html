@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Services</title>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<script >
+	  $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+  });
+
+
+function myfunction() {
+  var pots1 = document.getElementById("text3");
+  var pots2 = document.getElementById("text4");
+
+      var letters = /^[A-Za-z]+$/;
+      if(pots1.value.match(letters) && pots2.value.match(letters))
+      {
+      alert('Your Form Submited Thanks');
+      return true;
+      }
+      else
+      {
+      alert('Please input Fileds');
+      return false;
+      }
+      }
+
+</script>
+<style >
+	 #text3 , #text4 , #days , #hours , #service{
+		border: none;
+		outline: none;
+		background-color: transparent;
+		border-bottom: 1px solid #eee;
+		color: #fff !important;
+    width: 100%;
+	}
+ #text3::placeholder , #text4::placeholder{
+		color: #fff;
+	}
+#text3:hover , #text4:hover , #text2:focus , #text3:focus , #text4:focus , #days , #hours , #service{
+		background-color: transparent;
+		outline: none;
+		box-shadow: none;
+	}
+	option{
+		background-color: #404040;
+	}
+</style>
+</head>
+<body >
+
+
+<!-- Navbar Top start --> 
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 pb-3" >
+ 
+ <a class="navbar-brand ml-4 font-weight-bold" href="#" style="font-size: 30px;">Headhunter Hairstyling</a>
+
+
+ <button class="navbar-toggler" type="button" data-toggle="collapse" aria-label="Toggle navigation" data-target="#exnavbar" >
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+<!--  Collapsible Content -->
+
+<div class="collapse navbar-collapse pr-5" id="exnavbar">
+
+   <!-- Links -->
+
+   <ul class="navbar-nav ml-auto mr-5 pr-5" style="font-size: 19px;">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="services.html">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="gallery.html">Gallery</a>
+    </li>
+     
+    <li class="nav-item">
+      <a class="nav-link text-white" href="aboutus.html">About</a>
+    </li>
+
+     <li class="nav-item">
+       <a class="nav-link text-white" href="contactus.html">Contact</a>
+     </li>
+ 
+   </ul>
+  
+</div>
+    
+  </nav>
+
+<!-- Navbar Top end --> 
+
+
+
+
+
+
+
+
+
+
+<div style="height: 700px; background: url('assets/Images/img29.jpg') center/cover no-repeat;">
+<div class="container" id="booking" >
+	<div class="row">
+		<div class="col-md-5 "></div>
+		<div class="col-md-7" style="background-color: rgba(0,0,0,0.8);margin-top: 165px;border-radius: 10px;">
+
+                    <h3 class="text-center text-white pt-5">Book Now</h3>
+                    <form>
+              <div class = "row mt-5">
+              	<div class="col-md-6 ">
+                 <select class="form-control" id="days" name = "days">
+             <option value = "day-select">Select Day</option>
+             <option value = "sunday">Sunday</option>
+             <option value = "monday">Monday</option>
+             <option value = "tuesday">Tuesday</option>
+             <option value = "wednesday">Wednesday</option>
+             <option value = "thursday">Thursday</option>
+             <option value = "friday">Friday</option>
+             <option value = "saturday">Saturday</option>
+             </select>
+</div>
+          <div class="col-md-6">
+             <select class="form-control" id="hours" name = "hours">
+             <option value = "hour-select">Select Hour</option>
+             <option value = "10">10: 00</option>
+             <option value = "10">12: 00</option>
+             <option value = "10">14: 00</option>
+             <option value = "10">16: 00</option>
+             <option value = "10">18: 00</option>
+             <option value = "10">20: 00</option>
+             <option value = "10">22: 00</option>
+             </select>
+             </div>
+</div>
+                <div class = "row mt-4">
+                	<div class="col-md-6">
+                            <input type = "text" id="text3" required="" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type = "text" id="text4" required="" class="form-control" placeholder="Phone Number">
+                        </div>
+</div>
+                        <div class ="row mt-4 " style="margin-bottom: 80px;">
+                        	<div class="col-md-6">
+                            <select class="form-control" id="service" name = "Services">
+                                <option value = "hour-select">Services</option>
+                                <option value = "Haircut">Haircut</option>
+                                <option value = "Color">Color</option>
+                                <option value = "Foil Color">Foil Color</option>
+                                <option value = "Styling">Styling</option>
+                                <option value = "Hair Care">Hair Care</option>
+                                <option value = "Nails">Nails</option>
+                               
+                            </select>
+                            </div>
+                            <div class="col-md-6">
+                            <input type ="submit" onclick="myfunction()" value = "BOOK" class="btn btn-primary  btn-block">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+</div>
+</div>
+
+
+<div class="container ">
+
+<div class="row mt-5">
+	<div class="col-md-6">
+	
+</div>
+</div>
+
+
+   
+   <hr class="mt-4" id="hrline">
+   <div class="row">
+   	<div class="col-md-8">
+</div>
+</div>
+
+
+
+<div class="row">
+
+	    <div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Cuts &nbsp;&nbsp;&nbsp;<i class="fas fa-cut "></i></h3>
+    </div>
+
+
+	<div class="col-md-6 mt-5">
+	<h5>Children (Under 12) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $17-25</h5>
+	<h5>Men&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $18-25</h5>
+	<h5>Women &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $45</h5>
+	<h5>Shampoo/Blow-Dry  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $17-25</h5>
+	<h5>Up-Do (Starts at) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35</h5>
+	</div>
+    
+
+
+
+</div>
+   <hr class="mt-4" >
+    
+    <div class="row">
+
+    
+	<div class="col-md-6 mt-5">
+	<h5>Mens Color &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$45</h5>
+	<h5>Toner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $45</h5>
+	<h5>Cap Highlights (Men) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35</h5>
+	<h5>Cap Hightlights (Women) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $60</h5>
+	<h5>Corrective Color &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$85</h5>
+	</div>
+    
+
+<div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Color &nbsp;&nbsp;&nbsp;<i class="fas fa-paint-brush"></i></h3>
+    </div>
+
+
+</div>
+
+<hr class="mt-4">
+
+   <div class="row">
+
+
+<div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Foil Color
+&nbsp;&nbsp;<i class="fas fa-chair"></i></h3>
+    </div>
+
+	<div class="col-md-6 mt-5">
+	<h5>Full Foil with one color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $85</h5>
+	<h5>With two colors &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $95</h5>
+	<h5>With three colors &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $105</h5>
+	<h5>Partial Foil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $65-80</h5>
+	</div>
+    
+
+
+
+</div>
+
+<hr class="mt-4">
+
+   <div class="row">
+
+
+	<div class="col-md-6 mt-5">
+	<h5>Chemical Straightner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $85</h5>
+	<h5>Keratin Complex &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$300</h5>
+	<h5>Semi-Perm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $55</h5>	
+	<h5>Permanent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $65</h5>
+	</div>
+
+<div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Styling
+&nbsp;&nbsp;<i class="fas fa-mortar-pestle"></i></h3>
+    </div>
+
+
+
+
+
+</div>
+
+<hr class="mt-4">
+
+
+
+  <div class="row">
+
+<div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Hair Care&nbsp;&nbsp;<i class="fas fa-handshake"></i></h3>
+    </div>
+
+
+
+	<div class="col-md-6 mt-5">
+	<h5>Lip wax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $25</h5>
+	<h5>Eyebrow wax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$25</h5>
+	<h5>Chin wax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $25</h5>	
+	<h5>Brazilian wax Starts at &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $65</h5>
+	</div>
+
+
+
+</div>
+
+<hr class="mt-4">
+
+
+
+  <div class="row mb-5">
+
+
+	<div class="col-md-6 mt-4">
+	<h5>Manicure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $22</h5>
+	<h5>Mens Manicure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$15</h5>
+	<h5>Pedicure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35</h5>	
+	<h5>Soak Off &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $15</h5>
+	<h5>Full Set &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;$35</h5>
+	<h5>Backfill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;$30</h5>
+	<h5>Fill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; $28</h5>
+	<h5>Toecaps &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $25</h5>
+	<h5>Polish Change &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; $10</h5>
+	
+	</div>
+
+<div class="col-md-6">
+    	<h3 class="text-center mt-5" style="font-size: 70px;">Nails &nbsp;&nbsp;<i class="fas fa-american-sign-language-interpreting"></i></h3>
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer Start -->
+
+<div style="background-color: #7f9f96;color: white;width: 100%">
+
+
+<div class="container">
+<div class="row pt-4" >
+
+
+<div class="col-md-3" >
+	
+	<h3 class="font-weight-bold" style="color: #000;font-family:Times New Roman, Times, serif; ">Contact Us</h3><br>
+	<p  class="contact">205 S Baylen St.</p>
+	<p class="contact">Pensacola, FL</p>
+  <p class="contact">230-430-3316</p>
+	<p class="contact">info@headhunterhairstyling.com</p>
+
+</div>
+
+
+<div class="col-md-3">
+<h3 class="font-weight-bold" style="color: #000;font-family:Times New Roman, Times, serif; ">Quick Links</h3><br>
+<p  class="linkc"><a href="#"> Home  </a></p>
+<p class="linkc"><a href="#"> Gallery  </a></p>
+<p class="linkc"><a href="#">  Contact Us </a></p>
+<p class="linkc"><a href="#"> About Us  </a></p>
+
+</div>
+
+
+
+
+<div class="col-md-3">
+<h3 class="font-weight-bold" style="color: #000; font-family:Times New Roman, Times, serif; ">Social Media</h3><br>
+<div class="social-media">
+	
+	<ul class="list-unstyled">
+	<li><a href="#"> <i class="fab fa-facebook-f"> </i></a>  </li>
+	<li><a href="#"> <i class="fab fa-twitter"> </i></a>  </li>
+	<li><a href="#"> <i class="fab fa-instagram"> </i></a>  </li>
+	<li><a href="#"> <i class="fab fa-google-plus-g"> </i></a>  </li>
+	<li><a href="#"> <i class="fab fa-youtube"> </i></a>  </li>
+	
+	</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-3">
+	<h4 class="font-weight-bold" style="color: #000; font-family:Times New Roman, Times, serif; ">Subcribe Our News Letter</h4><br>
+<form>
+<input type="text" name="subcribe" placeholder="Enter Gmail" class="form-control" required=""><button class="btn btn-dark">Submit</button>
+</form>
+
+
+</div>
+
+
+</div>
+
+
+<hr style="background-color: white;">
+<div class="row pb-3">
+<div class="offset-md-2 col-md-9">
+<h5 style="text-align: center;font-family:Times New Roman, Times, serif;  ">Copyright ©2021 All rights reserved</h5>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<script  src="script.js"></script>
+
+
+
+</body>
+</html>
